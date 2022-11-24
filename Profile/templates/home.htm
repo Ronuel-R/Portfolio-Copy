@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+{% for social in social %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css'%}" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class= "header">
+        
+        <h1 class="font-header">Ronuel
+            <a class="text navigate" href="http://127.0.0.1:8000/home/">Home</a>
+            <a class="text" href="http://127.0.0.1:8000/account/">Profile</a>
+            <a class="text" href="http://127.0.0.1:8000/account/">Projects</a>
+            <a class="text" href="http://127.0.0.1:8000/account/">Experience</a>
+            <a class="text" href="http://127.0.0.1:8000/account/">About me</a>
+
+        </h1>
+        
+    </div>
+    <div class = "content">
+        <div class="contact">
+        <h1>Hello I'm Ronuel Joshua B. Reyes</h1>
+        <h3>Connect with me:</h3>
+        <div class= "social">
+            <a href="{{social.facebook}}" class="fa fa-facebook"></a>
+            <a href="{{social.twitter}}" class="fa fa-twitter"></a>
+            <a href="{{social.linkedin}}" class="fa fa-linkedin"></a>
+            <a href="{{social.instagram}}" class="fa fa-instagram"></a>
+            <a href="{{social.email}}" class="fa fa-google"></a>
+            <a href="{{social.github}}" class="fa fa-github"></a>
+        </div>
+    </div>
+    </div>
+</body>
+{% endfor %}
+</html>

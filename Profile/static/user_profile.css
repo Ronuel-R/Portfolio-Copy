@@ -1,0 +1,23 @@
+.user-box{
+    width: 280px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 30px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    font-family: serif;
+
+}
+.profile{
+    margin-left: 100px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    width: 180px;;
+    height: 180px;
+}
+

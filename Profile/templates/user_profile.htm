@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% for profile in profile %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'user_profile.css'%}" >
+
+</head>
+<body class="webpage">
+    <h1>PORTFOLIO</h1>
+    <div class="user-box">
+    
+    <img class="profile" src ="../{{profile.picture}}" alt="Profile">
+
+    <h2 class = "user-information">Basic Information:</h2>
+
+    <p>Name: {{profile.full_name}}</p>
+    <p>Age: {{profile.age}}</p>
+    <p>Sex: {{profile.gender}}</p>
+    <p>Birthday: {{profile.birthday}}</p>
+    <p>Address: {{profile.address}}</p>
+    <p>School: {{profile.school}}</p>
+    <p>Year graduated: {{profile.graduate_yr}}</p>
+    <p>Course: {{profile.course}}</p>
+
+    </div>
+</body>
+{% endfor %}
+</html>
