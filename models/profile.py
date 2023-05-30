@@ -11,6 +11,7 @@ class Profile(models.Model):
     GENDER_CHOICES = (
         ('M', 'Male'),
         ('F', 'Female'),
+        
     )
     gender= models.CharField(max_length=5, choices=GENDER_CHOICES)
     birthday= models.DateField(null = True)

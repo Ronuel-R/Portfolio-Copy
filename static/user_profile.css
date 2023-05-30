@@ -4,6 +4,7 @@
     padding: 50px;
     margin: 10px;
     border-radius: 30px;
+    margin-left: 515px;
 }
 h1{
     text-align: center;
@@ -16,8 +17,18 @@ h3{
     margin-left: 100px;
     background-size: 50%;
     background-repeat: no-repeat;
-    margin-left: 40px;
+    margin-left: 50px;
     width: 180px;;
     height: 180px;
+}
+.background{
+    position: absolute;
+    width: 280px;
+    padding: 50px;
+    background-color: #e6d1bdd7;
+    margin-top: 18px;
+    height: 100%;
+    width:93.4%;
+    left: 0;
 }
 

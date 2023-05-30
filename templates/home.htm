@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 {% for social in social %}
+{% for profile in profile %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,24 +20,23 @@
             <a class="text" href="http://127.0.0.1:8000/account/">Projects</a>
             <a class="text" href="http://127.0.0.1:8000/account/">Experience</a>
             <a class="text" href="http://127.0.0.1:8000/account/">About me</a>
-
         </h1>
-        
     </div>
     <div class = "content">
         <div class="contact">
-        <h1>Hello I'm Ronuel Joshua B. Reyes</h1>
+        <h1>Hello I'm {{profile.full_name}}</h1>
         <h3>Connect with me:</h3>
         <div class= "social">
             <a href="{{social.facebook}}" class="fa fa-facebook"></a>
             <a href="{{social.twitter}}" class="fa fa-twitter"></a>
             <a href="{{social.linkedin}}" class="fa fa-linkedin"></a>
             <a href="{{social.instagram}}" class="fa fa-instagram"></a>
-            <a href="{{social.email}}" class="fa fa-google"></a>
+            <a href="mailto:{{social.email}}" class="fa fa-google"></a>
             <a href="{{social.github}}" class="fa fa-github"></a>
         </div>
     </div>
     </div>
 </body>
+{% endfor %}
 {% endfor %}
 </html>
